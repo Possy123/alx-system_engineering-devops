@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# to iterate a string using until
+
+count=0
+
+until false; do
+  echo "Best School"
+  ((count++))
+  if [[ $count -lt 10 ]]; then
+    continue
+  else
+    break
+  fi
+done
